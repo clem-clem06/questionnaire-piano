@@ -1,16 +1,4 @@
-<!DOCTYPE html>
-<html lang="fr">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../style/normalize.css">
-    <link rel="stylesheet" href="../style/style.css">
-    <script src="../script/script.js"></script>
-    <title>Document</title>
-</head>
-    <body>
-        
-        <form action="" method="post">
+ <form action="" method="post">
             <div>Quel(s) style(s) jouez-vous ?</div>
 
             <label>
@@ -31,10 +19,7 @@
             <!--faire apparaitre et disparaitre si coche-->
 
             <button type="submit">Envoyer</button>
-        </form>
-
-    </body>
-</html>
+ </form>
 <?php
     if(isset($_POST['style'])) {
         foreach($_POST['style'] as $style) {

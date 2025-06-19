@@ -1,0 +1,13 @@
+{
+    "require": {
+        "symfony/amphp-http-client-meta": "^1.0"
+    },
+
+    "autoload": {
+        "files": [
+            "questions/autoload_questions.php",
+            "enregistrement.php",
+            "offre/autoload_offre.php"
+        ]
+    }
+}

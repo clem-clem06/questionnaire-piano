@@ -7,7 +7,8 @@
         "files": [
             "questions/autoload_questions.php",
             "enregistrement.php",
-            "offre/autoload_offre.php"
+            "offre/autoload_offre.php",
+            "mail.php"
         ]
     }
 }

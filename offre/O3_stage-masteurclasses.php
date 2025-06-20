@@ -1,5 +1,5 @@
 <?php
-function O2_stage_masteurclasses()
+function O3_stage_masteurclasses()
 {
     ?>
     <H2>Stage ou masteurclasses</H2>

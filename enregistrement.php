@@ -6,8 +6,12 @@ function enregistrement()
     unset($_SESSION['reponses']);
     }
 
+    if (isset($_POST['mail'])) {
+        unset($_SESSION['reponses']);
+        $_SESSION['reponses']['mail'] = $_POST['mail'];
+    }
+
     if (isset($_POST['pianiste'])) {
-    unset($_SESSION['reponses']);
     $_SESSION['reponses']['pianiste'] = $_POST['pianiste'];
     }
 

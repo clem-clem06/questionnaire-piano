@@ -1,0 +1,17 @@
+{
+    "require": {
+        "symfony/amphp-http-client-meta": "^1.0",
+        "symfony/mailer": "^7.3",
+        "vlucas/phpdotenv": "^5.6"
+    },
+
+    "autoload": {
+        "files": [
+            "questions/autoload_questions.php",
+            "enregistrement.php",
+            "reponse/autoload_reponse.php",
+            "envoie-mail.php",
+            "resume-reponse.php"
+        ]
+    }
+}

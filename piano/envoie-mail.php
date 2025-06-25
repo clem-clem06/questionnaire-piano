@@ -1,0 +1,76 @@
+<?php
+use Symfony\Component\Mailer\Transport;
+use Symfony\Component\Mailer\Mailer;
+use Symfony\Component\Mime\Email;
+use Dotenv\Dotenv;
+
+function envoie_mail($Id_mail)
+{
+    $dotenv = Dotenv::createImmutable(__DIR__, '.env.local');
+    $dotenv->load();
+
+    $dsn = $_ENV['MAILER_DSN'] ?? null;
+
+    if (!$dsn) {
+        die("MAILER_DSN non défini dans .env");
+    }
+
+    $transport = Transport::fromDsn($dsn);
+    $mailer = new Mailer($transport);
+
+    $nom = htmlspecialchars($_SESSION['reponses']['nom'] ?? 'Cher pianiste');
+    $mail = htmlspecialchars($_SESSION['reponses']['mail'] ?? null);
+
+    if (!$mail) {
+        echo '<p class="message-erreur">Adresse mail non définie dans la session</p>';
+        exit;
+    }
+
+    if ($Id_mail == 1) {
+        $html = "<p>Bonjour <strong>{$nom}</strong>,</p>
+            <p>Merci d’avoir répondu aux questions du quizz sur le site internet.</p>
+            <p>Vos réponses me permettent de vous conseiller. Pour bien démarrer au piano sans perdre de temps, afin de vous faire plaisir rapidement, je vous conseille de rejoindre <strong>Les coulisses.</strong></p>
+            <p>C’est un abonnement mensuel, sans engagement, qui représente un investissement de 49€/mois ou 500€/an.</p>
+            <p>
+                <a href='https://serenitepiano.fr/' style='
+                    display:inline-block;
+                    background-color:#bd9145;
+                    color:white;
+                    padding:12px 20px;
+                    border-radius:6px;
+                    text-decoration:none;
+                    font-weight:bold;
+                '>Je rentre dans Les coulisses</a>
+            </p>
+            <p>On se retrouve là-bas !</p>
+            <p>Votre mentore piano,<br>Christine Jeandroz 🎹💖</p>";
+    }
+
+    if ($Id_mail == 2) {
+        $html = "<p>Bonjour <strong>{$nom}</strong>,</p>
+                <p>Merci d’avoir répondu aux questions du Quizz sur notre site internet.</p>
+                <p>Selon vos réponses, j’ai compris que vous aimeriez un accompagnement de groupe et vous préférez les événements en personne plutôt que le digital, aussi je pense que les <strong>Évasions,</strong> les <strong>Masterclasses</strong> à Paris et dans d’autres villes, ainsi que la retraite 5* <strong>Le cercle du Silence</strong> sont les formats qui pourraient le plus vous convenir.</p>
+                <p>Vous recevrez sous 48 heures une vidéo personnalisée de quelques minutes.</p>
+                <p>À très bientôt,<br>Christine Jeandroz, votre mentore piano<br>🎹💖</p>";
+    }
+
+    if ($Id_mail == 3) {
+        $html = "<p>Bonjour <strong>{$nom}</strong>,</p>
+            <p>Merci d’avoir répondu aux questions du quiz sur le site internet.</p>
+            <p>Vous recevrez sous 48 heures une vidéo personnalisée de quelques minutes avec des conseils personnalisés.</p>
+            <p>Je serai ravie de vous accompagner dans le développement de votre carrière. Nous verrons en détail vos objectifs lors d’un rendez-vous que vous pourrez réserver après la lecture de la vidéo.</p>
+            <p>À très bientôt,<br>Christine Jeandroz, mentore piano<br>🎹💖</p>";
+    }
+
+
+    $html .= resume_reponse();
+
+    $email = (new Email())
+        ->from('tonadresse@mail.com')
+        ->to($mail)
+        ->subject('Merci pour vos réponses !')
+        ->html($html);
+
+    $mailer->send($email);
+    http_response_code(200);
+}

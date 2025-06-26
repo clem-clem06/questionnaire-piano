@@ -227,8 +227,10 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
             ) {
                 R1_amateur();
                 $Id_mail = 1;
-                envoie_mail($Id_mail);
-                $_SESSION['mail_sent'] = true;
+                if (!isset($_SESSION['mail_sent'])) {
+                    envoie_mail($Id_mail);
+                    $_SESSION['mail_sent'] = true;
+                }
             }
             #endregion
 
@@ -239,8 +241,10 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
             ) {
                 R1_amateur();
                 $Id_mail = 1;
-                envoie_mail($Id_mail);
-                $_SESSION['mail_sent'] = true;
+                if (!isset($_SESSION['mail_sent'])) {
+                    envoie_mail($Id_mail);
+                    $_SESSION['mail_sent'] = true;
+                }
             }
             #endregion
 
@@ -253,8 +257,10 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
             ) {
                 R1_amateur();
                 $Id_mail = 4;
-                envoie_mail($Id_mail);
-                $_SESSION['mail_sent'] = true;
+                if (!isset($_SESSION['mail_sent'])) {
+                    envoie_mail($Id_mail);
+                    $_SESSION['mail_sent'] = true;
+                }
             }
             #endregion
 
@@ -272,8 +278,10 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
             ) {
                 R1_amateur();
                 $Id_mail = 2;
-                envoie_mail($Id_mail);
-                $_SESSION['mail_sent'] = true;
+                if (!isset($_SESSION['mail_sent'])) {
+                    envoie_mail($Id_mail);
+                    $_SESSION['mail_sent'] = true;
+                }
             }
             #endregion
 
@@ -291,8 +299,10 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
             ) {
                 R1_amateur();
                 $Id_mail = 5;
-                envoie_mail($Id_mail);
-                $_SESSION['mail_sent'] = true;
+                if (!isset($_SESSION['mail_sent'])) {
+                    envoie_mail($Id_mail);
+                    $_SESSION['mail_sent'] = true;
+                }
             }
             #endregion
 
@@ -310,8 +320,10 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
             ) {
                 R1_amateur();
                 $Id_mail = 6;
-                envoie_mail($Id_mail);
-                $_SESSION['mail_sent'] = true;
+                if (!isset($_SESSION['mail_sent'])) {
+                    envoie_mail($Id_mail);
+                    $_SESSION['mail_sent'] = true;
+                }
             }
             #endregion
 
@@ -325,8 +337,10 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
             ) {
                 R2_pro();
                 $Id_mail = 3;
-                envoie_mail($Id_mail);
-                $_SESSION['mail_sent'] = true;
+                if (!isset($_SESSION['mail_sent'])) {
+                    envoie_mail($Id_mail);
+                    $_SESSION['mail_sent'] = true;
+                }
             }
             #endregion
             #endregion

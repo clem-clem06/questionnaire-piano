@@ -220,59 +220,45 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
             #endregion
 
             #region R
-            #region R1
+            #region non pianiste
             if (
                 isset($_SESSION['reponses']['autre'], $_SESSION['reponses']['pianiste']) &&
                 $_SESSION['reponses']['pianiste'] === '2'
             ) {
-                R1_non_pianiste();
+                R1_amateur();
                 $Id_mail = 1;
-                //envoie_mail($Id_mail);
+                envoie_mail($Id_mail);
+                $_SESSION['mail_sent'] = true;
             }
             #endregion
 
-            #region R2
+            #region -5ans
             if (
                 isset($_SESSION['reponses']['autre'], $_SESSION['reponses']['experience']) &&
                 $_SESSION['reponses']['experience'] === '1'
             ) {
-                R2_5ans();
+                R1_amateur();
                 $Id_mail = 1;
-                //envoie_mail($Id_mail);
+                envoie_mail($Id_mail);
+                $_SESSION['mail_sent'] = true;
             }
             #endregion
 
-            #region R3
+            #region amateur et groupe digital
             if(
-                isset($_SESSION['reponses']['autre'], $_SESSION['reponses']['format']) &&
+                isset($_SESSION['reponses']['autre'], $_SESSION['reponses']['format'], $_SESSION['reponses']['accompagnement'], $_SESSION['reponses']['pro/am']) &&
                 $_SESSION['reponses']['accompagnement'] === '1' &&
-                $_SESSION['reponses']['format'] == '2' &&
-                $_SESSION['reponses']['pro/am'] !== '2'
+                $_SESSION['reponses']['format'] == '1' &&
+                $_SESSION['reponses']['pro/am'] === '1'
             ) {
-                R3_defaut();
-                $Id_mail = 2;
-                //envoie_mail($Id_mail);
+                R1_amateur();
+                $Id_mail = 4;
+                envoie_mail($Id_mail);
+                $_SESSION['mail_sent'] = true;
             }
             #endregion
 
-            #region R4 && mail 2
-            if (
-                isset(
-                    $_SESSION['reponses']['pro/am'],
-                    $_SESSION['reponses']['accompagnement'],
-                    $_SESSION['reponses']['format']
-                ) &&
-                $_SESSION['reponses']['pro/am'] === '2' &&
-                $_SESSION['reponses']['accompagnement'] === '1' &&
-                $_SESSION['reponses']['format'] === '2'
-            ) {
-                R4_10_pro();
-                $Id_mail = 2;
-                // envoie_mail($Id_mail);
-            }
-            #endregion
-
-            #region R4
+            #region amateur et groupe present
             if (
                 isset(
                     $_SESSION['reponses']['autre'],
@@ -280,74 +266,69 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                     $_SESSION['reponses']['accompagnement'],
                     $_SESSION['reponses']['format']
                 ) &&
-                (
-                    ($_SESSION['reponses']['pro/am'] === '2' && $_SESSION['reponses']['accompagnement'] === '1' && $_SESSION['reponses']['format'] === '1') ||
-
-                    (isset($_SESSION['reponses']['experience']) && $_SESSION['reponses']['experience'] === '3') ||
-
-                    (isset($_SESSION['reponses']['experience']) && $_SESSION['reponses']['experience'] === '2' &&
-                        $_SESSION['reponses']['accompagnement'] === '1' && $_SESSION['reponses']['format'] === '1')
-                ) &&
-                !(
-                    $_SESSION['reponses']['accompagnement'] === '1' &&
-                    $_SESSION['reponses']['format'] === '2'
-                )
+                $_SESSION['reponses']['pro/am'] === '1' &&
+                $_SESSION['reponses']['accompagnement'] === '1' &&
+                $_SESSION['reponses']['format'] === '2'
             ) {
-                R4_10_pro();
-                $Id_mail = 3;
-                // envoie_mail($Id_mail);
+                R1_amateur();
+                $Id_mail = 2;
+                envoie_mail($Id_mail);
+                $_SESSION['mail_sent'] = true;
             }
             #endregion
 
+            #region amateur et induviduel et digi
             if (
-                isset($_SESSION['reponses']['experience'], $_SESSION['reponses']['accompagnement'], $_SESSION['reponses']['format']) &&
-                $_SESSION['reponses']['experience'] === '2' &&
+                isset(
+                    $_SESSION['reponses']['autre'],
+                    $_SESSION['reponses']['pro/am'],
+                    $_SESSION['reponses']['accompagnement'],
+                    $_SESSION['reponses']['format']
+                ) &&
+                $_SESSION['reponses']['pro/am'] === '1' &&
                 $_SESSION['reponses']['accompagnement'] === '2' &&
                 $_SESSION['reponses']['format'] === '1'
             ) {
-                // à voir
-                R5();
+                R1_amateur();
+                $Id_mail = 5;
+                envoie_mail($Id_mail);
+                $_SESSION['mail_sent'] = true;
             }
+            #endregion
 
+            #region amateur et induviduel et present
             if (
-                isset($_SESSION['reponses']['experience'], $_SESSION['reponses']['accompagnement'], $_SESSION['reponses']['format']) &&
-                $_SESSION['reponses']['experience'] === '2' &&
+                isset(
+                    $_SESSION['reponses']['autre'],
+                    $_SESSION['reponses']['pro/am'],
+                    $_SESSION['reponses']['accompagnement'],
+                    $_SESSION['reponses']['format']
+                ) &&
+                $_SESSION['reponses']['pro/am'] === '1' &&
                 $_SESSION['reponses']['accompagnement'] === '2' &&
                 $_SESSION['reponses']['format'] === '2'
             ) {
-                // à voir
-                R5();
+                R1_amateur();
+                $Id_mail = 6;
+                envoie_mail($Id_mail);
+                $_SESSION['mail_sent'] = true;
             }
+            #endregion
 
+            #region pro
             if (
-                isset($_SESSION['reponses']['experience'], $_SESSION['reponses']['accompagnement'], $_SESSION['reponses']['format']) &&
-                $_SESSION['reponses']['experience'] === '3' &&
-                $_SESSION['reponses']['accompagnement'] === '2' &&
-                $_SESSION['reponses']['format'] === '1'
+                isset(
+                    $_SESSION['reponses']['autre'],
+                    $_SESSION['reponses']['pro/am'],
+                ) &&
+                $_SESSION['reponses']['pro/am'] === '2'
             ) {
-                // à voir
-                R5();
+                R2_pro();
+                $Id_mail = 3;
+                envoie_mail($Id_mail);
+                $_SESSION['mail_sent'] = true;
             }
-
-            if (
-                isset($_SESSION['reponses']['experience'], $_SESSION['reponses']['accompagnement'], $_SESSION['reponses']['format']) &&
-                $_SESSION['reponses']['experience'] === '3' &&
-                $_SESSION['reponses']['accompagnement'] === '2' &&
-                $_SESSION['reponses']['format'] === '2'
-            ) {
-                // à voir
-                R5();
-            }
-
-            if (
-                isset($_SESSION['reponses']['pro/am'], $_SESSION['reponses']['accompagnement'], $_SESSION['reponses']['format']) &&
-                $_SESSION['reponses']['pro/am'] === '2' &&
-                $_SESSION['reponses']['accompagnement'] === '2' &&
-                $_SESSION['reponses']['format'] === '2'
-            ) {
-                // à voir
-                R5();
-            }
+            #endregion
             #endregion
 
 

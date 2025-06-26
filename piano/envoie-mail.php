@@ -28,22 +28,23 @@ function envoie_mail($Id_mail)
 
     if ($Id_mail == 1) {
         $html = "<p>Bonjour <strong>{$nom}</strong>,</p>
-            <p>Merci d’avoir répondu aux questions du quizz sur le site internet.</p>
-            <p>Vos réponses me permettent de vous conseiller. Pour bien démarrer au piano sans perdre de temps, afin de vous faire plaisir rapidement, je vous conseille de rejoindre <strong>Les coulisses.</strong></p>
-            <p>C’est un abonnement mensuel, sans engagement, qui représente un investissement de 49€/mois ou 500€/an.</p>
-            <p>
-                <a href='https://serenitepiano.fr/' style='
-                    display:inline-block;
-                    background-color:#bd9145;
-                    color:white;
-                    padding:12px 20px;
-                    border-radius:6px;
-                    text-decoration:none;
-                    font-weight:bold;
-                '>Je rentre dans Les coulisses</a>
-            </p>
-            <p>On se retrouve là-bas !</p>
-            <p>Votre mentore piano,<br>Christine Jeandroz 🎹💖</p>";
+        <p>Merci d’avoir répondu aux questions du quizz sur le site internet.</p>
+        <p>Vos réponses me permettent de vous conseiller. Pour bien démarrer au piano sans perdre de temps, et pour vous faire plaisir rapidement, je vous conseille de rejoindre <strong>Les coulisses</strong>.</p>
+        <p>C’est un abonnement mensuel, sans engagement, qui représente un investissement de <strong>49 €/mois</strong> ou <strong>500 €/an</strong>.</p>
+        <p>
+            <a href='https://virtuosopiano.fr/' style='
+                display:inline-block;
+                background-color:#bd9145;
+                color:white;
+                padding:12px 20px;
+                border-radius:6px;
+                text-decoration:none;
+                font-weight:bold;
+            '>Je rentre dans Les coulisses</a>
+        </p>
+        <p>On se retrouve là-bas !</p>
+        <p>🎁 En attendant, je vous offre aujourd’hui une <strong>vidéo exclusive</strong> pour vous aider à progresser encore plus vite.</p>
+        <p>Votre mentore piano,<br>Christine Jeandroz 🎹💖</p>";
     }
 
     if ($Id_mail == 2) {
@@ -57,9 +58,26 @@ function envoie_mail($Id_mail)
     if ($Id_mail == 3) {
         $html = "<p>Bonjour <strong>{$nom}</strong>,</p>
             <p>Merci d’avoir répondu aux questions du quiz sur le site internet.</p>
-            <p>Vous recevrez sous 48 heures une vidéo personnalisée de quelques minutes avec des conseils personnalisés.</p>
+            <p>Vous recevrez sous 48 heures une vidéo de quelques minutes avec des conseils personnalisés.</p>
             <p>Je serai ravie de vous accompagner dans le développement de votre carrière. Nous verrons en détail vos objectifs lors d’un rendez-vous que vous pourrez réserver après la lecture de la vidéo.</p>
             <p>À très bientôt,<br>Christine Jeandroz, mentore piano<br>🎹💖</p>";
+    }
+
+    if ($Id_mail == 4) {
+        $html = "<p>Bonjour <strong>{$nom}</strong>,</p>
+        <p>Merci d’avoir répondu aux questions du quiz sur le site internet.</p>
+        <p>Selon vos réponses, j’ai compris que vous aimeriez un accompagnement de groupe, et que vous préférez un format digital.</p>
+        <p>Vous recevrez sous 48 heures une vidéo de quelques minutes avec des conseils personnalisés.</p>
+        <p>Nous pourrons ensuite échanger plus en détail sur vos objectifs lors d’un rendez-vous que vous pourrez réserver après la lecture de la vidéo.</p>
+        <p>À très bientôt,<br>Christine Jeandroz, mentore piano<br>🎹💖</p>";
+    }
+
+    if ($Id_mail == 5) {
+        $html = "";
+    }
+
+    if ($Id_mail == 6) {
+        $html = "";
     }
 
 

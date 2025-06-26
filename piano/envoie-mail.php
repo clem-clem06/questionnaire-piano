@@ -98,7 +98,7 @@ function envoie_mail($Id_mail)
     $email = (new Email())
         ->from('tonadresse@mail.com')
         ->to($mail)
-        ->subject('Merci pour vos réponses !')
+        ->subject('Votre profil pianistique 🎹')
         ->html($html);
 
     $mailer->send($email);

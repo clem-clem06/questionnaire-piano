@@ -1,6 +1,6 @@
 <?php
 
-    function chemin(){
+    function chemin_questionnaire(){
     #region Q
     #region Q14_info-perso
     if(

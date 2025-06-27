@@ -29,7 +29,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         <main>
             <h1>Quiz piano</h1>
             <?php
-            chemain();
+            chemin_questionnaire();
             ?>
         </main>
     </body>

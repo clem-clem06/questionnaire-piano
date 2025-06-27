@@ -23,7 +23,7 @@ function Q9_style(){
             <p id="message" class="message-erreur"></p>
 
             <button type="submit" class="btn_submit">Envoyer</button>
-
+            <button type="button" class="btn_retour">Retour</button>
  </form>
 <?php
 }

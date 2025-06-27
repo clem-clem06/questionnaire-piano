@@ -10,6 +10,50 @@
     <option name="highlightLevel" value="WARNING" />
     <option name="transferred" value="true" />
   </component>
+  <component name="PhpIncludePathManager">
+    <include_path>
+      <path value="$PROJECT_DIR$/piano/vendor/amphp/parser" />
+      <path value="$PROJECT_DIR$/piano/vendor/amphp/process" />
+      <path value="$PROJECT_DIR$/piano/vendor/amphp/serialization" />
+      <path value="$PROJECT_DIR$/piano/vendor/amphp/socket" />
+      <path value="$PROJECT_DIR$/piano/vendor/amphp/sync" />
+      <path value="$PROJECT_DIR$/piano/vendor/amphp/windows-registry" />
+      <path value="$PROJECT_DIR$/piano/vendor/league/uri" />
+      <path value="$PROJECT_DIR$/piano/vendor/league/uri-interfaces" />
+      <path value="$PROJECT_DIR$/piano/vendor/league/uri-parser" />
+      <path value="$PROJECT_DIR$/piano/vendor/vlucas/phpdotenv" />
+      <path value="$PROJECT_DIR$/piano/vendor/egulias/email-validator" />
+      <path value="$PROJECT_DIR$/piano/vendor/kelunik/certificate" />
+      <path value="$PROJECT_DIR$/piano/vendor/symfony/deprecation-contracts" />
+      <path value="$PROJECT_DIR$/piano/vendor/symfony/event-dispatcher" />
+      <path value="$PROJECT_DIR$/piano/vendor/symfony/event-dispatcher-contracts" />
+      <path value="$PROJECT_DIR$/piano/vendor/symfony/mailer" />
+      <path value="$PROJECT_DIR$/piano/vendor/symfony/mime" />
+      <path value="$PROJECT_DIR$/piano/vendor/symfony/polyfill-ctype" />
+      <path value="$PROJECT_DIR$/piano/vendor/symfony/polyfill-intl-idn" />
+      <path value="$PROJECT_DIR$/piano/vendor/symfony/polyfill-intl-normalizer" />
+      <path value="$PROJECT_DIR$/piano/vendor/symfony/polyfill-mbstring" />
+      <path value="$PROJECT_DIR$/piano/vendor/symfony/polyfill-php80" />
+      <path value="$PROJECT_DIR$/piano/vendor/symfony/service-contracts" />
+      <path value="$PROJECT_DIR$/piano/vendor/composer" />
+      <path value="$PROJECT_DIR$/piano/vendor/doctrine/lexer" />
+      <path value="$PROJECT_DIR$/piano/vendor/phpoption/phpoption" />
+      <path value="$PROJECT_DIR$/piano/vendor/daverandom/libdns" />
+      <path value="$PROJECT_DIR$/piano/vendor/graham-campbell/result-type" />
+      <path value="$PROJECT_DIR$/piano/vendor/psr/container" />
+      <path value="$PROJECT_DIR$/piano/vendor/psr/event-dispatcher" />
+      <path value="$PROJECT_DIR$/piano/vendor/psr/http-factory" />
+      <path value="$PROJECT_DIR$/piano/vendor/psr/http-message" />
+      <path value="$PROJECT_DIR$/piano/vendor/psr/log" />
+      <path value="$PROJECT_DIR$/piano/vendor/amphp/amp" />
+      <path value="$PROJECT_DIR$/piano/vendor/amphp/byte-stream" />
+      <path value="$PROJECT_DIR$/piano/vendor/amphp/cache" />
+      <path value="$PROJECT_DIR$/piano/vendor/amphp/dns" />
+      <path value="$PROJECT_DIR$/piano/vendor/amphp/hpack" />
+      <path value="$PROJECT_DIR$/piano/vendor/amphp/http" />
+      <path value="$PROJECT_DIR$/piano/vendor/amphp/http-client" />
+    </include_path>
+  </component>
   <component name="PhpProjectSharedConfiguration" php_language_level="7.4">
     <option name="suggestChangeDefaultLanguageLevel" value="false" />
   </component>

@@ -96,7 +96,7 @@ function envoie_mail($Id_mail)
     $html .= resume_reponse();
 
     $email = (new Email())
-        ->from('tonadresse@mail.com')
+        ->from('contact@christinejeandroz.com')
         ->to($mail)
         ->subject('Votre profil pianistique 🎹')
         ->html($html);

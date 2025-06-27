@@ -18,6 +18,7 @@ function Q15_autre(){
     <p id="message" class="message-erreur"></p>
 
     <button type="submit" class="btn_submit" id="submit_autre">Envoyer</button>
+    <button type="button" class="btn_retour">Retour</button>
 </form>
 <?php
 }

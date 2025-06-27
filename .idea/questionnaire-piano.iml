@@ -1,7 +1,48 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <module type="WEB_MODULE" version="4">
   <component name="NewModuleRootManager">
-    <content url="file://$MODULE_DIR$" />
+    <content url="file://$MODULE_DIR$">
+      <excludeFolder url="file://$MODULE_DIR$/piano/vendor/amphp/amp" />
+      <excludeFolder url="file://$MODULE_DIR$/piano/vendor/amphp/byte-stream" />
+      <excludeFolder url="file://$MODULE_DIR$/piano/vendor/amphp/cache" />
+      <excludeFolder url="file://$MODULE_DIR$/piano/vendor/amphp/dns" />
+      <excludeFolder url="file://$MODULE_DIR$/piano/vendor/amphp/hpack" />
+      <excludeFolder url="file://$MODULE_DIR$/piano/vendor/amphp/http" />
+      <excludeFolder url="file://$MODULE_DIR$/piano/vendor/amphp/http-client" />
+      <excludeFolder url="file://$MODULE_DIR$/piano/vendor/amphp/parser" />
+      <excludeFolder url="file://$MODULE_DIR$/piano/vendor/amphp/process" />
+      <excludeFolder url="file://$MODULE_DIR$/piano/vendor/amphp/serialization" />
+      <excludeFolder url="file://$MODULE_DIR$/piano/vendor/amphp/socket" />
+      <excludeFolder url="file://$MODULE_DIR$/piano/vendor/amphp/sync" />
+      <excludeFolder url="file://$MODULE_DIR$/piano/vendor/amphp/windows-registry" />
+      <excludeFolder url="file://$MODULE_DIR$/piano/vendor/composer" />
+      <excludeFolder url="file://$MODULE_DIR$/piano/vendor/daverandom/libdns" />
+      <excludeFolder url="file://$MODULE_DIR$/piano/vendor/doctrine/lexer" />
+      <excludeFolder url="file://$MODULE_DIR$/piano/vendor/egulias/email-validator" />
+      <excludeFolder url="file://$MODULE_DIR$/piano/vendor/graham-campbell/result-type" />
+      <excludeFolder url="file://$MODULE_DIR$/piano/vendor/kelunik/certificate" />
+      <excludeFolder url="file://$MODULE_DIR$/piano/vendor/league/uri" />
+      <excludeFolder url="file://$MODULE_DIR$/piano/vendor/league/uri-interfaces" />
+      <excludeFolder url="file://$MODULE_DIR$/piano/vendor/league/uri-parser" />
+      <excludeFolder url="file://$MODULE_DIR$/piano/vendor/phpoption/phpoption" />
+      <excludeFolder url="file://$MODULE_DIR$/piano/vendor/psr/container" />
+      <excludeFolder url="file://$MODULE_DIR$/piano/vendor/psr/event-dispatcher" />
+      <excludeFolder url="file://$MODULE_DIR$/piano/vendor/psr/http-factory" />
+      <excludeFolder url="file://$MODULE_DIR$/piano/vendor/psr/http-message" />
+      <excludeFolder url="file://$MODULE_DIR$/piano/vendor/psr/log" />
+      <excludeFolder url="file://$MODULE_DIR$/piano/vendor/symfony/deprecation-contracts" />
+      <excludeFolder url="file://$MODULE_DIR$/piano/vendor/symfony/event-dispatcher" />
+      <excludeFolder url="file://$MODULE_DIR$/piano/vendor/symfony/event-dispatcher-contracts" />
+      <excludeFolder url="file://$MODULE_DIR$/piano/vendor/symfony/mailer" />
+      <excludeFolder url="file://$MODULE_DIR$/piano/vendor/symfony/mime" />
+      <excludeFolder url="file://$MODULE_DIR$/piano/vendor/symfony/polyfill-ctype" />
+      <excludeFolder url="file://$MODULE_DIR$/piano/vendor/symfony/polyfill-intl-idn" />
+      <excludeFolder url="file://$MODULE_DIR$/piano/vendor/symfony/polyfill-intl-normalizer" />
+      <excludeFolder url="file://$MODULE_DIR$/piano/vendor/symfony/polyfill-mbstring" />
+      <excludeFolder url="file://$MODULE_DIR$/piano/vendor/symfony/polyfill-php80" />
+      <excludeFolder url="file://$MODULE_DIR$/piano/vendor/symfony/service-contracts" />
+      <excludeFolder url="file://$MODULE_DIR$/piano/vendor/vlucas/phpdotenv" />
+    </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
   </component>

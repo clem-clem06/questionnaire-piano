@@ -26,6 +26,7 @@ function Q14_info_perso()
         <p id="message" class="message-erreur"></p>
 
         <button type="submit" class="btn_submit">Continuer</button>
+        <button type="button" class="btn_retour">Retour</button>
     </form>
 <?php
 }

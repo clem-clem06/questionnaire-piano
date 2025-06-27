@@ -28,6 +28,7 @@ function Q13_pourquoi(){
                 <p id="message" class="message-erreur"></p>
 
                 <button type="submit" class="btn_submit">Envoyer</button>
+                <button type="button" class="btn_retour">Retour</button>
             </form>
     <?php
 }

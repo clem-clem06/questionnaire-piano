@@ -6,21 +6,21 @@ function Q4_experience(){
 
         <label>
             <input type="radio" name="experience" value="1">
-            <p>Moins de 5 ans</p>
+            <span>Moins de 5 ans</span>
         </label>
 
         <label>
             <input type="radio" name="experience" value="2">
-            <p>Entre 5 et 10 ans</p>
+            <span>Entre 5 et 10 ans</span>
         </label>
 
         <label>
             <input type="radio" name="experience" value="3">
-            <p>Plus de 10 ans</p>
+            <span>Plus de 10 ans</span>
         </label>
 
-        <button type="submit" class="btn_submit">Envoyer</button>
-        <button type="button" class="btn_retour">Retour</button>
+        <button type="submit" name="action" class="btn_submit">Envoyer</button>
+        <button type="submit" name="action" class="btn_retour" value="retour">Retour</button>
     </form>
     <?php
 }

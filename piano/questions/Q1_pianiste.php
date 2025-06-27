@@ -6,16 +6,16 @@ function Q1_pianiste() {
 
      <label>
          <input type="radio" name="pianiste" value="1">
-         <p>Oui, je suis pianiste</p>
+         <span>Oui, je suis pianiste</span>
      </label>
 
      <label>
          <input type="radio" name="pianiste" value="2">
-         <p>Non, je ne suis pas pianiste</p>
+         <span>Non, je ne suis pas pianiste</span>
      </label>
 
-    <button type="submit" class="btn_submit">Envoyer</button>
-    <button type="button" class="btn_retour">Retour</button>
+    <button type="submit" name="action" class="btn_submit">Envoyer</button>
+    <button type="submit" name="action" class="btn_retour" value="retour">Retour</button>
  </form>
 <?php
 }

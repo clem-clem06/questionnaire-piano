@@ -6,21 +6,21 @@ function Q12_prof(){
 
             <label>
                 <input type="radio" name="prof" value="1">
-                <p>Oui dans un établissement public</p>
+                <span>Oui dans un établissement public</span>
             </label>
 
             <label>
                 <input type="radio" name="prof" value="2">
-                <p>Oui en privé</p>
+                <span>Oui en privé</span>
             </label>
 
             <label>
                 <input type="radio" name="prof" value="3">
-                <p>Non</p>
+                <span>Non</span>
             </label>
 
-            <button type="submit" class="btn_submit">Envoyer</button>
-            <button type="button" class="btn_retour">Retour</button>
+            <button type="submit" name="action" class="btn_submit">Envoyer</button>
+            <button type="submit" name="action" class="btn_retour" value="retour">Retour</button>
         </form>
 <?php
 }

@@ -6,21 +6,21 @@ function Q10_acquerir(){
 
             <label>
                 <input type="radio" name="instrument" value="1">
-                <p>Acoustique</p>
+                <span>Acoustique</span>
             </label>
 
             <label>
                 <input type="radio" name="instrument" value="2">
-                <p>Numérique</p>
+                <span>Numérique</span>
             </label>
 
             <label>
                 <input type="radio" name="instrument" value="3">
-                <p>Je ne sais pas</p>
+                <span>Je ne sais pas</span>
             </label>
 
-            <button type="submit" class="btn_submit">Envoyer</button>
-            <button type="button" class="btn_retour">Retour</button>
+            <button type="submit" name="action" class="btn_submit">Envoyer</button>
+            <button type="submit" name="action" class="btn_retour" value="retour">Retour</button>
 </form>
 <?php
 }

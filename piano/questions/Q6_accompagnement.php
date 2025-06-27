@@ -6,16 +6,16 @@ function Q6_accompagnement(){
 
     <label>
         <input type="radio" name="accompagnement" value="1">
-        <p>En groupe</p>
+        <span>En groupe</span>
     </label>
 
     <label>
         <input type="radio" name="accompagnement" value="2">
-        <p>Individuel</p>
+        <span>Individuel</span>
     </label>
 
-    <button type="submit" class="btn_submit">Envoyer</button>
-    <button type="button" class="btn_retour">Retour</button>
+    <button type="submit" name="action" class="btn_submit">Envoyer</button>
+    <button type="submit" name="action" class="btn_retour" value="retour">Retour</button>
 </form>
 <?php
 }

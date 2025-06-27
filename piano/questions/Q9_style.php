@@ -6,24 +6,24 @@ function Q9_style(){
 
             <label>
                 <input type="checkbox" name="style[]" value="1">
-                <p>Jazz</p>
+                <span>Jazz</span>
             </label>
 
             <label>
                 <input type="checkbox" name="style[]" value="2">
-                <p>Classique</p>
+                <span>Classique</span>
             </label>
 
-            <label>
+            <label for="textarea_autre">
                 <input type="checkbox" name="style[]" value="3" class="checkbox_autre">
-                <p>Autre</p>
+                <span>Autre</span>
             </label>
-            <textarea rows="5" cols="33" placeholder="exprimez-vous librement" name="style[]" class="textarea_autre"></textarea>
+            <textarea id="textarea_autre" rows="5" cols="33" placeholder="exprimez-vous librement" name="style[]" class="textarea_autre"></textarea>
 
             <p id="message" class="message-erreur"></p>
 
-            <button type="submit" class="btn_submit">Envoyer</button>
-            <button type="button" class="btn_retour">Retour</button>
+            <button type="submit" name="action" class="btn_submit">Envoyer</button>
+            <button type="submit" name="action" class="btn_retour" value="retour">Retour</button>
  </form>
 <?php
 }

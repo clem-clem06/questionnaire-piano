@@ -6,21 +6,21 @@ function Q2_piano(){
 
         <label>
             <input type="radio" name="piano" value="1">
-            <p>Acoustique</p>
+            <span>Acoustique</span>
          </label>
 
         <label>
             <input type="radio" name="piano" value="2">
-            <p>Numérique</p>
+            <span>Numérique</span>
         </label>
 
         <label>
             <input type="radio" name="piano" value="3">
-            <p>Je ne possède pas de piano</p>
+            <span>Je ne possède pas de piano</span>
         </label>
 
-        <button type="submit" class="btn_submit">Envoyer</button>
-        <button type="button" class="btn_retour">Retour</button>
+        <button type="submit" name="action" class="btn_submit">Envoyer</button>
+        <button type="submit" name="action" class="btn_retour" value="retour">Retour</button>
     </form>
      <?php
 }

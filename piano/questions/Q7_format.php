@@ -6,16 +6,16 @@ function Q7_format(){
 
             <label>
                 <input type="radio" name="format" value="1">
-                <p>Digital</p>
+                <span>Digital</span>
             </label>
 
             <label>
                 <input type="radio" name="format" value="2">
-                <p>En personne</p>
+                <span>En personne</span>
             </label>
 
-            <button type="submit" class="btn_submit">Envoyer</button>
-            <button type="button" class="btn_retour">Retour</button>
+            <button type="submit" name="action" class="btn_submit">Envoyer</button>
+            <button type="submit" name="action" class="btn_retour" value="retour">Retour</button>
         </form>
 <?php
 }

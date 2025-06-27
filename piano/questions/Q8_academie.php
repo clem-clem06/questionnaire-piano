@@ -13,16 +13,16 @@ function Q8_academie()
 
                 <label>
                     <input type="radio" name="academie" value="1">
-                    <p>Oui</p>
+                    <span>Oui</span>
                 </label>
 
                 <label>
                     <input type="radio" name="academie" value="2">
-                    <p>Non</p>
+                    <span>Non</span>
                 </label>
 
-                <button type="submit" class="btn_submit">Envoyer</button>
-                <button type="button" class="btn_retour">Retour</button>
+                <button type="submit" name="action" class="btn_submit">Envoyer</button>
+                <button type="submit" name="action" class="btn_retour" value="retour">Retour</button>
      </form>
     <?php
 }

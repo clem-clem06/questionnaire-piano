@@ -6,16 +6,16 @@ function Q3_pro_am(){
 
         <label>
             <input type="radio" name="pro/am" value="1">
-            <p>Amateur</p>
+            <span>Amateur</span>
         </label>
 
         <label>
             <input type="radio" name="pro/am" value="2">
-            <p>Professionnel</p>
+            <span>Professionnel</span>
         </label>
 
-        <button type="submit" class="btn_submit">Envoyer</button>
-        <button type="button" class="btn_retour">Retour</button>
+        <button type="submit" name="action" class="btn_submit">Envoyer</button>
+        <button type="submit" name="action" class="btn_retour" value="retour">Retour</button>
     </form>
     <?php
 }

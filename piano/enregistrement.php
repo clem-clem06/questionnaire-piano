@@ -6,7 +6,7 @@ function enregistrement(): bool
     }
 
     $saved = false;
-    $fields = ['mail', 'nom', 'pianiste', 'piano', 'pro/am', 'instrument', 'motivation', 'experience', 'problematiques', 'accompagnement', 'format', 'academie', 'pourquoi', 'prof', 'style', 'autre'];
+    $fields = ['nom', 'mail', 'pianiste', 'piano', 'pro/am', 'instrument', 'motivation', 'experience', 'problematiques', 'accompagnement', 'format', 'academie', 'pourquoi', 'prof', 'style', 'autre'];
 
     foreach ($fields as $field) {
         if (isset($_POST[$field])) {

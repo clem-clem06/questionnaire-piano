@@ -32,4 +32,5 @@ return array(
     '8102edb613389df4de2e0e4fcbbe73ba' => $baseDir . '/envoie-mail.php',
     '84a93706db18891d0ddad21c78c327ff' => $baseDir . '/resume-reponse.php',
     'fdbf6afa2bbeea9a96b059fedf58e046' => $baseDir . '/chemin_questionnaire.php',
+    '1a1328c04b5324d1a235a4cc5fc76fce' => $baseDir . '/retour.php',
 );

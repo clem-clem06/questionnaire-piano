@@ -31,4 +31,5 @@ return array(
     'f3cf8c6a71fd35b74d095ba381ba60f4' => $baseDir . '/reponse/autoload_reponse.php',
     '8102edb613389df4de2e0e4fcbbe73ba' => $baseDir . '/envoie-mail.php',
     '84a93706db18891d0ddad21c78c327ff' => $baseDir . '/resume-reponse.php',
+    'fdbf6afa2bbeea9a96b059fedf58e046' => $baseDir . '/chemin_questionnaire.php',
 );

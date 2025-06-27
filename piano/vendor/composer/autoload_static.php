@@ -32,6 +32,7 @@ class ComposerStaticInit82b6f689a649a4ce4f174aee369756d2
         'f3cf8c6a71fd35b74d095ba381ba60f4' => __DIR__ . '/../..' . '/reponse/autoload_reponse.php',
         '8102edb613389df4de2e0e4fcbbe73ba' => __DIR__ . '/../..' . '/envoie-mail.php',
         '84a93706db18891d0ddad21c78c327ff' => __DIR__ . '/../..' . '/resume-reponse.php',
+        'fdbf6afa2bbeea9a96b059fedf58e046' => __DIR__ . '/../..' . '/chemin_questionnaire.php',
     );
 
     public static $prefixLengthsPsr4 = array (

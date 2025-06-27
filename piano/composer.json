@@ -11,7 +11,8 @@
             "enregistrement.php",
             "reponse/autoload_reponse.php",
             "envoie-mail.php",
-            "resume-reponse.php"
+            "resume-reponse.php",
+            "chemin_questionnaire.php"
         ]
     }
 }

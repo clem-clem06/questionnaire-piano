@@ -20,6 +20,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="style/normalize.css">
         <link rel="stylesheet" href="style/style.css">
+        <link rel="stylesheet" href="style/footer.css">
         <script src="script/script.js" defer></script>
         <title>Question Piano</title>
     </head>
@@ -37,4 +38,40 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
             ?>
         </main>
     </body>
+    <footer class="footer">
+        <div class="contenu-footer">
+            <p class="signature-footer">
+                Christine Jeandroz<br>
+                J’aide les pianistes à progresser sans y passer des heures, grâce à des méthodes de travail personnalisées, des exercices courts et ciblés.
+            </p>
+
+            <nav class="liens-footer">
+                <a href="https://store.christinejeandroz.com/mentions-legales">Mentions légales</a>
+                <a href="https://store.christinejeandroz.com/cgu-cgv-septembre-2024">CGV</a>
+                <a href="https://www.instagram.com/christinejeandroz/">Contact</a>
+            </nav>
+
+            <p class="texte-footer">&copy; 2025 Sérénité Piano · Tous droits réservés</p>
+
+            <table>
+                <tbody class="footer-bas">
+                    <tr>
+                        <td class="createur-site">
+                                Site créé par&nbsp;<a>JULIEN Clément</a>
+                        </td>
+                        <td class="reseaux-sociaux">
+                                <a href="https://www.facebook.com/christinejeandroz.pianiste" target="_blank">
+                                    <img class="logo-reseaux" src="img/logo-facebook.svg" alt="Facebook">
+                                </a>
+                                <a href="https://www.linkedin.com/in/christine-jeandroz/" target="_blank">
+                                    <img class="logo-reseaux" src="img/logo-linkedin.svg" alt="LinkedIn">
+                                </a>
+                                <a href="https://www.instagram.com/christinejeandroz/" target="_blank">
+                                    <img class="logo-reseaux" src="img/logo-instagram.svg" alt="Instagram">
+                                </a>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+    </footer>
 </html>

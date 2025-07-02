@@ -1,0 +1,85 @@
+.footer {
+    display: flex;
+    text-align: center;
+    font-family: 'Helvetica Neue', sans-serif;
+    padding: 4rem;
+    background-color: #f5f5f5;
+    font-size: 0.9rem;
+    color: #555;
+}
+
+.contenu-footer {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.texte-footer {
+    margin-bottom: 1rem;
+    font-size: 0.9rem;
+}
+
+.liens-footer {
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+    flex-wrap: wrap;
+}
+
+.liens-footer a {
+    color: #5b4636;
+    text-decoration: none;
+    font-size: 0.9rem;
+    transition: color 0.3s ease;
+}
+
+.liens-footer a:hover {
+    color: #a67c52;
+}
+
+.signature-footer {
+    font-style: italic;
+    font-size: 1rem;
+    margin-bottom: 1.5rem;
+    color: #5b4636;
+    line-height: 1.6;
+}
+
+.bas-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 2rem;
+    padding-top: 1rem;
+    flex-wrap: wrap;
+}
+
+.createur-site {
+    text-align: left;
+    width: 100%;
+    vertical-align: middle;
+    padding: 0.5em 0;
+    line-height: 2.75;
+}
+
+.createur-site a {
+    color: #0073e6;
+    text-decoration: none;
+}
+
+.createur-site a:hover {
+    text-decoration: underline;
+}
+
+.reseaux-sociaux {
+    display: flex;
+    gap: 1.5rem;
+    white-space: nowrap;
+    text-align: right;
+    vertical-align: middle;
+    padding: 0.5em 0;
+}
+
+.logo-reseaux {
+    height: 30px;
+    width: auto;
+}

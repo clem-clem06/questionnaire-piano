@@ -314,10 +314,4 @@
     }
     #endregion
     #endregion
-
-    if(isset ($_SESSION['reponses'])){
-        echo '<pre>';
-        print_r($_SESSION['reponses']);
-        echo '</pre>';
-    }
 }

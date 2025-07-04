@@ -9,7 +9,7 @@ function Q8_academie()
             <p class="intro">L’investissement est de 1998€ pour 3 mois, 3500€ pour 6 mois et 6000€ pour 12 mois.</p>
         </div>
     <form action="" method="post">
-                <div>L'académie vous interesse t'elle ?</div>
+                <div>L'académie vous intéresse-t'elle ?</div>
 
                 <label>
                     <input type="radio" name="academie" value="1">
@@ -21,8 +21,8 @@ function Q8_academie()
                     <span>Non</span>
                 </label>
 
-                <button type="submit" name="action" class="btn_submit">Envoyer</button>
                 <button type="submit" name="action" class="btn_retour" value="retour">Retour</button>
+                <button type="submit" name="action" class="btn_submit">Envoyer</button>
      </form>
     <?php
 }

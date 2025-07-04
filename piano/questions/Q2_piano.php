@@ -19,8 +19,8 @@ function Q2_piano(){
             <span>Je ne possède pas de piano</span>
         </label>
 
-        <button type="submit" name="action" class="btn_submit">Envoyer</button>
         <button type="submit" name="action" class="btn_retour" value="retour">Retour</button>
+        <button type="submit" name="action" class="btn_submit">Envoyer</button>
     </form>
      <?php
 }

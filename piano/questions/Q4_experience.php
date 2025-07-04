@@ -19,8 +19,8 @@ function Q4_experience(){
             <span>Plus de 10 ans</span>
         </label>
 
-        <button type="submit" name="action" class="btn_submit">Envoyer</button>
         <button type="submit" name="action" class="btn_retour" value="retour">Retour</button>
+        <button type="submit" name="action" class="btn_submit">Envoyer</button>
     </form>
     <?php
 }

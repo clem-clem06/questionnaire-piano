@@ -14,8 +14,8 @@ function Q1_pianiste() {
          <span>Non, je ne suis pas pianiste</span>
      </label>
 
-    <button type="submit" name="action" class="btn_submit">Envoyer</button>
     <button type="submit" name="action" class="btn_retour" value="retour">Retour</button>
+    <button type="submit" name="action" class="btn_submit">Envoyer</button>
  </form>
 <?php
 }

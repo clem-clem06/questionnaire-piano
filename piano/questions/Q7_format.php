@@ -16,6 +16,6 @@ function Q7_format(){
 
             <button type="submit" name="action" class="btn_submit">Envoyer</button>
             <button type="submit" name="action" class="btn_retour" value="retour">Retour</button>
-        </form>
+</form>
 <?php
 }

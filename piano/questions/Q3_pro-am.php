@@ -15,7 +15,7 @@ function Q3_pro_am(){
         </label>
 
         <button type="submit" name="action" class="btn_retour" value="retour">Retour</button>
-        <button type="submit" name="action" class="btn_submit">Envoyer</button>
+        <button type="submit" name="action" class="btn_submit">Continuer</button>
     </form>
     <?php
 }

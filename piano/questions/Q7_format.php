@@ -14,8 +14,8 @@ function Q7_format(){
                 <span>En personne</span>
             </label>
 
-            <button type="submit" name="action" class="btn_submit">Envoyer</button>
             <button type="submit" name="action" class="btn_retour" value="retour">Retour</button>
+            <button type="submit" name="action" class="btn_submit">Continuer</button>
 </form>
 <?php
 }

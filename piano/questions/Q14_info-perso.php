@@ -20,7 +20,7 @@ function Q14_info_perso()
         <div>Entrez votre prénom</div>
 
         <label>
-            <input type="text" name="nom" placeholder="Christine">
+            <input type="text" name="nom" placeholder="Prénom">
         </label>
 
         <p id="message" class="message-erreur"></p>

@@ -88,7 +88,7 @@ function Q5_problematiques($prof,$experience) {
         <p id="message" class="message-erreur"></p>
 
         <button type="submit" name="action" class="btn_retour" value="retour">Retour</button>
-        <button type="submit" name="action" class="btn_submit">Envoyer</button>
+        <button type="submit" name="action" class="btn_submit">Continuer</button>
     </form>
     <?php
 }

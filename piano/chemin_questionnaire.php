@@ -190,27 +190,19 @@
     #endregion
 
     #region R
-    #region non pianiste
+    #region non pianiste ou -5ans
     if (
-        isset($_SESSION['reponses']['autre'], $_SESSION['reponses']['pianiste']) &&
-        $_SESSION['reponses']['pianiste'] === '2'
+        (isset($_SESSION['reponses']['autre'], $_SESSION['reponses']['pianiste']) &&
+        $_SESSION['reponses']['pianiste'] === '2')
+        ||
+        (isset($_SESSION['reponses']['autre'], $_SESSION['reponses']['experience']) &&
+            $_SESSION['reponses']['experience'] === '1')
     ) {
         R1_amateur();
         $Id_mail = 1;
-        if (!isset($_SESSION['mail_sent'])) {
-            envoie_mail($Id_mail);
-            $_SESSION['mail_sent'] = true;
-        }
-    }
-    #endregion
-
-    #region -5ans
-    if (
-        isset($_SESSION['reponses']['autre'], $_SESSION['reponses']['experience']) &&
-        $_SESSION['reponses']['experience'] === '1'
-    ) {
-        R1_amateur();
-        $Id_mail = 1;
+        require_once 'BDD.php';
+        $bdd = new BDD();
+        $bdd->enregistrerReponses();
         if (!isset($_SESSION['mail_sent'])) {
             envoie_mail($Id_mail);
             $_SESSION['mail_sent'] = true;
@@ -227,6 +219,9 @@
     ) {
         R1_amateur();
         $Id_mail = 4;
+        require_once 'BDD.php';
+        $bdd = new BDD();
+        $bdd->enregistrerReponses();
         if (!isset($_SESSION['mail_sent'])) {
             envoie_mail($Id_mail);
             $_SESSION['mail_sent'] = true;
@@ -248,6 +243,9 @@
     ) {
         R1_amateur();
         $Id_mail = 2;
+        require_once 'BDD.php';
+        $bdd = new BDD();
+        $bdd->enregistrerReponses();
         if (!isset($_SESSION['mail_sent'])) {
             envoie_mail($Id_mail);
             $_SESSION['mail_sent'] = true;
@@ -269,6 +267,9 @@
     ) {
         R1_amateur();
         $Id_mail = 5;
+        require_once 'BDD.php';
+        $bdd = new BDD();
+        $bdd->enregistrerReponses();
         if (!isset($_SESSION['mail_sent'])) {
             envoie_mail($Id_mail);
             $_SESSION['mail_sent'] = true;
@@ -290,6 +291,9 @@
     ) {
         R1_amateur();
         $Id_mail = 6;
+        require_once 'BDD.php';
+        $bdd = new BDD();
+        $bdd->enregistrerReponses();
         if (!isset($_SESSION['mail_sent'])) {
             envoie_mail($Id_mail);
             $_SESSION['mail_sent'] = true;
@@ -307,11 +311,26 @@
     ) {
         R2_pro();
         $Id_mail = 3;
+        require_once 'BDD.php';
+        $bdd = new BDD();
+        $resultat = $bdd->enregistrerReponses();
+
+        if ($resultat['success']) {
+            echo "Réponses enregistrées avec succès.";
+        } else {
+            echo "Erreur : " . htmlspecialchars($resultat['message']);
+        }
+
         if (!isset($_SESSION['mail_sent'])) {
             envoie_mail($Id_mail);
             $_SESSION['mail_sent'] = true;
         }
     }
-    #endregion
-    #endregion
+    #endregion pro
+    #endregion R
+//        if(isset ($_SESSION['reponses'])){
+//            echo '<pre>';
+//            print_r($_SESSION['reponses']);
+//            echo '</pre>';
+//        }
 }

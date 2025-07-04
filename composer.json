@@ -1,0 +1,15 @@
+{
+    "name": "cleme/questionnaire-piano",
+    "autoload": {
+        "psr-4": {
+            "Cleme\\QuestionnairePiano\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "clem-clem06",
+            "email": "clement.julien@iia-formation.fr"
+        }
+    ],
+    "require": {}
+}

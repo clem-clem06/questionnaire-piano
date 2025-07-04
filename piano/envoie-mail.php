@@ -76,7 +76,7 @@ function envoie_mail($Id_mail)
         $html = "<p>Bonjour <strong>{$nom}</strong>,</p>
         <p>Merci d’avoir répondu aux questions du quiz sur le site internet.</p>
         <p>Selon vos réponses, j’ai compris que vous aimeriez un accompagnement individuel, et que vous préférez un format digital.</p>
-        <p>Je pense donc que les <strong>cours 1:1 en visio</strong> ou le <strong>mentorat privé sur mesure La Résonance</strong> sont les formats qui pourraient le mieux vous convenir.</p>
+        <p>Je pense donc que les <strong>cours 1:1 en visio</strong> ou <strong>La Résonance</strong>, mentorat privé sur mesure, sont les formats qui pourraient le mieux vous convenir.</p>
         <p>Vous recevrez sous 48 heures une vidéo personnalisée de quelques minutes avec mes recommandations.</p>
         <p>Nous pourrons ensuite échanger plus en détail sur vos objectifs lors d’un rendez-vous que vous pourrez réserver après la lecture de la vidéo.</p>
         <p>À très bientôt,<br>Christine Jeandroz, mentore piano<br>🎹💖</p>";

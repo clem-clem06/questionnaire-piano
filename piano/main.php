@@ -42,13 +42,13 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         <div class="contenu-footer">
             <p class="signature-footer">
                 Christine Jeandroz<br>
-                J’aide les pianistes à progresser sans y passer des heures, grâce à des méthodes de travail personnalisées, des exercices courts et ciblés.
+                J'accompagne les pianistes de haut niveau et professionnels dans leur évolution.
             </p>
 
             <nav class="liens-footer">
                 <a href="https://store.christinejeandroz.com/mentions-legales">Mentions légales</a>
                 <a href="https://store.christinejeandroz.com/cgu-cgv-septembre-2024">CGV</a>
-                <a href="https://www.instagram.com/christinejeandroz/">Contact</a>
+                <a href="https://christinejeandroz.com/contact-christine-jeandroz/">Contact</a>
             </nav>
 
             <p class="texte-footer">&copy; 2025 Sérénité Piano · Tous droits réservés</p>
